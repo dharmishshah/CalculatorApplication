@@ -56,7 +56,7 @@ public class CalculatorManagerImpl implements CalculatorManager{
     }
 
     @Override
-    public void addOperation(String operation) {
+    public float addOperation(String operation) {
         Operation operationObj = new Operation();
         float answer = 0.0f;
         if(operation.contains("+")){
@@ -77,6 +77,7 @@ public class CalculatorManagerImpl implements CalculatorManager{
         operationObj.setOperation(operation);
         operationObj.setTimestamp(new Date());
         operationsStack.push(operationObj);
+        return answer;
 
     }
 

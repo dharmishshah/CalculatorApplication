@@ -41,8 +41,9 @@ public class CalculatorController {
         Map<String, String> resultMap = new HashMap<>();
         String[] validate = calculatorManager.validateOperation(operand1, operand2, operation);
         if(validate[0].equals("valid")){
-            calculatorManager.addOperation(validate[1]);
+            float answer = calculatorManager.addOperation(validate[1]);
             resultMap.put("status", "success");
+            resultMap.put("answer", "" + answer);
         }else{
             resultMap.put("status", "failure");
             resultMap.put("errorMessage", validate[1]);
