@@ -1,7 +1,6 @@
 package com.application.calculator.controller;
 
 import com.application.calculator.manager.CalculatorManager;
-import com.application.calculator.model.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +10,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * This is a calculator controller which serves all operations involved in a typical calculator.
+ */
 @RestController
 @RequestMapping(value = "/api/calculator")
 @CrossOrigin("*")
@@ -19,10 +21,15 @@ public class CalculatorController {
     @Autowired
     CalculatorManager calculatorManager;
 
+    /**
+     *  This request method gets 10 latest calculations from the logs. You can also customise the number of latest
+     *  transactions by giving optional parameter of pageSize
+     * @param pageSize optional parameter to specify number of latest calculations from logs
+     * @return
+     */
     @RequestMapping(value="/getLatestCalculations",method = RequestMethod.GET)
     @ResponseBody
-    public Map<String, Object> getLatestCalculations (HttpServletRequest request, HttpServletResponse response,
-                                                      @RequestParam(name = "pageSize", required = false, defaultValue = "10")
+    public Map<String, Object> getLatestCalculations (@RequestParam(name = "pageSize", required = false, defaultValue = "10")
                                                               int pageSize) {
         Map<String, Object> resultMap = new HashMap<>();
         List<String> operations = calculatorManager.getOperations(pageSize);
@@ -32,6 +39,14 @@ public class CalculatorController {
 
     }
 
+    /**
+     * This method performs a operation with the provided operands and operation.
+     * Operation can be +, -, / and * for respective operation.
+     * @param operation operation to be performed (addition, subtraction, division and multiplication)
+     * @param operand1 operand1
+     * @param operand2 operand2
+     * @return
+     */
     @RequestMapping(value="/addCalculation",method = RequestMethod.GET)
     @ResponseBody
     public Map<String, String> addCalculation (HttpServletRequest request, HttpServletResponse response,
@@ -50,6 +65,8 @@ public class CalculatorController {
         }
         return resultMap;
     }
+
+
 
 
 }

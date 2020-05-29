@@ -1,14 +1,16 @@
 <!doctype html>
 <html>
 <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-resource.min.js"></script>
+    <script src="scripts/app.js"></script>
     <meta charset="utf-8">
     <title>Calculator</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-app="Calculator" class="">
+
 <div ng-controller="appCtrl" class="">
 
     <div class="row">
@@ -27,10 +29,10 @@
             </div>
             <div class="calculationPage" >
                 <h2>Page Size
-                    <select ng-model="selectedPage" ng-options="x for x in pages">
+                    <select ng-model="selectedPage" ng-options="x for x in pages"
+                            ng-change="recentCalculationsFunct()">
                         <option ng-value={{x}}> {{x}} </option>
                     </select>
-                    <h1>You selected: {{selectedPage}}</h1>
                 </h2>
             </div>
             <div class="calculation" ng-repeat="calculation in recentCalculations">
@@ -40,9 +42,5 @@
     </div>
 
 </div>
-
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-resource.min.js"></script>
-<script src="scripts/app.js"></script>
 </body>
 </html>

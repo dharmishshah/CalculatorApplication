@@ -4,6 +4,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * This class stores each calculation details with its timestamp.
+ */
 public class Operation {
 
     private String operation;
