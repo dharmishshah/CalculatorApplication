@@ -22,6 +22,15 @@ public class CalculatorManagerImpl implements CalculatorManager{
         String regex = "[+-]?[0-9][0-9]*";
         String regexFloat = "[+-]?[0-9]+(\\.[0-9]+)?([Ee][+-]?[0-9]+)?";
 
+        if(operand1.isEmpty() || operand2.isEmpty()){
+            result[0] = "error";
+            result[1] = "Operand missing :  Parameter $operand1 or $operand2 is required";
+        }
+
+        if(operation.isEmpty()){
+            result[0] = "error";
+            result[1] = "Operation missing :  Parameter $operation is required";
+        }
         if(operation.equals(" "))
             operation = "+";
 
