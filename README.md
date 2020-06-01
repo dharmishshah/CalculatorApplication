@@ -23,6 +23,6 @@ Please refer following url mappings to perform calculations:
     operand1 = value of first operand
     operand2 = value of second operand
     
-This is a simple calculator application developed and deployed in Spring with documentation.
+This is a simple calculator application developed and deployed in Spring and Angular with documentation.
 Please let me know your suggestions. 
         

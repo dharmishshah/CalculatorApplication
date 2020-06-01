@@ -11,35 +11,36 @@
 </head>
 <body ng-app="Calculator" class="">
 
-<div ng-controller="appCtrl" class="">
+<div ng-controller="appCtrl">
+    <h1>Calculator Application</h1>
 
-    <div class="row">
-        <div class="column">
-            <div class="output">
-                <h1>{{result}}</h1>
-                <h2>{{formula.join('')}}</h2>
-            </div>
-            <ul class="input-pad">
-                <li ng-repeat='input in pad' on-touch='add(input)' ng-class='{clear: input == "clear"}'>{{input}}</li>
-            </ul>
-        </div>
-        <div class="column">
-            <div class="recent">
-                <h1>Recent Calculations</h1>
-            </div>
-            <div class="calculationPage" >
-                <h2>Page Size
-                    <select ng-model="selectedPage" ng-options="x for x in pages"
-                            ng-change="recentCalculationsFunct()">
-                        <option ng-value={{x}}> {{x}} </option>
-                    </select>
-                </h2>
-            </div>
-            <div class="calculation" ng-repeat="calculation in recentCalculations">
-                <h2>{{calculation}}</h2>
-            </div>
-        </div>
-    </div>
+<!--    <div class="row">-->
+<!--        <div class="column">-->
+<!--            <div class="output">-->
+<!--                <h1>{{result}}</h1>-->
+<!--                <h2>{{formula.join('')}}</h2>-->
+<!--            </div>-->
+<!--            <ul class="input-pad">-->
+<!--                <li ng-repeat='input in pad' on-touch='add(input)' ng-class='{clear: input == "clear"}'>{{input}}</li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="column">-->
+<!--            <div class="recent">-->
+<!--                <h1>Recent Calculations</h1>-->
+<!--            </div>-->
+<!--            <div class="calculationPage" >-->
+<!--                <h2>Page Size-->
+<!--                    <select ng-model="selectedPage" ng-options="x for x in pages"-->
+<!--                            ng-change="recentCalculationsFunct()">-->
+<!--                        <option ng-value={{x}}> {{x}} </option>-->
+<!--                    </select>-->
+<!--                </h2>-->
+<!--            </div>-->
+<!--            <div class="calculation" ng-repeat="calculation in recentCalculations">-->
+<!--                <h2>{{calculation}}</h2>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
 </div>
 </body>
