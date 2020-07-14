@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ae2e394-3ad1-43c3-9eab-825ae31f2e1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Calculator_Application.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/calculator/CalculatorApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/calculator/controller/CalculatorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/calculator/controller/CalculatorErrorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/calculator/manager/CalculatorManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/calculator/manager/CalculatorManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/calculator/model/Operation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scripts/app.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +74,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CalculatorApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -83,7 +104,10 @@
       <updated>1590727225038</updated>
       <workItem from="1590727228158" duration="18614000" />
       <workItem from="1591899160963" duration="99000" />
-      <workItem from="1592238480597" duration="30000" />
+      <workItem from="1592238480597" duration="349000" />
+      <workItem from="1592241400613" duration="617000" />
+      <workItem from="1592370814200" duration="106000" />
+      <workItem from="1594755242882" duration="909000" />
     </task>
     <servers />
   </component>
@@ -114,22 +138,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591899260156" />
-    <state width="1323" height="269" key="GridCell.Tab.0.bottom" timestamp="1591038447855">
+    <state width="1323" height="269" key="GridCell.Tab.0.bottom" timestamp="1594756269966">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591038447855" />
-    <state width="1323" height="269" key="GridCell.Tab.0.center" timestamp="1591038447855">
+    <state width="1323" height="269" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594756269966" />
+    <state width="1323" height="269" key="GridCell.Tab.0.center" timestamp="1594756269966">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591038447855" />
-    <state width="1323" height="269" key="GridCell.Tab.0.left" timestamp="1591038447855">
+    <state width="1323" height="269" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594756269966" />
+    <state width="1323" height="269" key="GridCell.Tab.0.left" timestamp="1594756269965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591038447855" />
-    <state width="1323" height="269" key="GridCell.Tab.0.right" timestamp="1591038447855">
+    <state width="1323" height="269" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594756269965" />
+    <state width="1323" height="269" key="GridCell.Tab.0.right" timestamp="1594756269966">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591038447855" />
+    <state width="1323" height="269" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594756269966" />
     <state width="1323" height="269" key="GridCell.Tab.1.bottom" timestamp="1591038447855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

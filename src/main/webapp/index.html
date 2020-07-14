@@ -1,47 +1,8 @@
 <!doctype html>
 <html>
-<head>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-resource.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <meta charset="utf-8">
-    <title>Calculator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body ng-app="Calculator" class="">
-
-<div ng-controller="appCtrl">
-    <h1>Calculator Application</h1>
-
-    <div class="row">
-        <div class="column">
-            <div class="output">
-                <h1>{{result}}</h1>
-                <h2>{{formula.join('')}}</h2>
-            </div>
-            <ul class="input-pad">
-                <li ng-repeat='input in pad' on-touch='add(input)' ng-class='{clear: input == "clear"}'>{{input}}</li>
-            </ul>
+    <body>
+        <div>
+            <h1>Calculator Application</h1>
         </div>
-        <div class="column">
-            <div class="recent">
-                <h1>Recent Calculations</h1>
-            </div>
-            <div class="calculationPage" >
-                <h2>Page Size
-                    <select ng-model="selectedPage" ng-options="x for x in pages"
-                            ng-change="recentCalculationsFunct()">
-                        <option ng-value={{x}}> {{x}} </option>
-                    </select>
-                </h2>
-            </div>
-            <div class="calculation" ng-repeat="calculation in recentCalculations">
-                <h2>{{calculation}}</h2>
-            </div>
-        </div>
-    </div>
-
-</div>
-</body>
+    </body>
 </html>
